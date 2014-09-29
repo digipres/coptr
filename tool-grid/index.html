@@ -7,6 +7,7 @@
     <meta name="description" content="COPTR Tool Grid">
     <meta name="author" content="COPTR">
 
+    <link href="/coptr/assets/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
 body {
   font-family: sans-serif;
@@ -30,6 +31,7 @@ th.rotate > div > span {
 }
 table {
  border-collapse: collapse;
+ max-width: none;
 }
 tbody th {
   white-space: nowrap;    
@@ -37,10 +39,37 @@ tbody th {
 tbody td, tbody th {
   border: 1px solid #ccc;    
 }
+nav.navbar {
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+}
     </style>
   </head>
 
   <body>
+
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#head-nav">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/coptr/">Home</a>
+        </div>
+        <div id="head-nav" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/coptr/tool-grid/">Tool Grid</a></li>
+            <li><a href="/coptr/contribs/users.html">Leaderboard</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+    </nav>
+
+
+  <div class="container">
+<a class="button" href="/coptr/">Home</a>
+
 
   <table>
 <thead>
@@ -21685,5 +21714,9 @@ tbody td, tbody th {
 
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/coptr/assets/js/bootstrap.min.js"></script>
+
+  </div>
 </body>
 </html>
